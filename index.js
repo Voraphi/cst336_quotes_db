@@ -7,10 +7,15 @@ app.set("view engine", "ejs");
 // const request = require('request');
 
 const connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'voraphi',
-    password: 'SchoolVor3',
-    database: 'quotes_db'
+    // host: 'localhost',
+    // user: 'voraphi',
+    // password: 'SchoolVor3',
+    // database: 'quotes_db'
+    host : "us-cdbr-iron-east-01.cleardb.net",
+    user : "b1f2dafb149ab0",
+    password : "9484d006",
+    database : "heroku_8a2db0b55ebd6ec"
+    // mysql://b1f2dafb149ab0:9484d006@us-cdbr-iron-east-01.cleardb.net/heroku_8a2db0b55ebd6ec?reconnect=true
 });
 
 connection.connect();
