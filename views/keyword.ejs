@@ -1,0 +1,26 @@
+<%- include ('templates/header'); -%>
+
+<div class='container'>
+	<div class='jumbotron'>
+		<h1 style="text-align: center;"> Search Quotes By </h1>
+		
+		<%- include ('templates/nav'); -%>
+
+	<form action='/keywordSearch' method='GET'>
+	<div class='form-group row'>
+	    <div class='col-sm-3'></div>
+		<label for='keyword' class='col-sm-2 col-form-label'>Keyword</label>
+		<div class='col-sm-4'>
+			<input type='text' class='form-control' id='keyword' name='keyword' placeholder='memorize' required>
+		</div>
+	</div>
+	<div class='form-group row'>
+		<div class='col-sm-4'></div>
+		<div class='col-sm-4'>
+			<button class='btn btn-primary btn-block'>Search Keyword</button>
+		</div>
+		<div class='col-sm-4'></div>
+	</div>
+</form>
+</div>
+</div>
